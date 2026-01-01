@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Toast from 'react-native-toast-message';
 import AppNavigator from './navigation/AppNavigator';
@@ -9,7 +9,7 @@ export default function App() {
     <SafeAreaProvider>
       <AppNavigator />
       <Toast />
-      <StatusBar style="dark" backgroundColor="#ffffff" />
+      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
     </SafeAreaProvider>
   );
 }
